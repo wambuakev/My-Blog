@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+This Post Title
+{% endblock  %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "blog/post-detail.css" %}" />
+{% endblock  %}
+
+{% block content %}
+    <section id="summary">
+        <h2>Post Title</h2>
+        <article>
+            <img src="{% static "blog/images/mountains.jpg" %}" alt="Post Title" />
+            <address>By Kelvin</address>
+            <div>
+                Last Updated On <time>August 2nd</time>
+            </div>
+        </article>
+    </section>
+    <main>
+        <p>
+            Pour comprendre la technologie, nous devons d'abord 
+            comprendre la nature humaine de la curiosité et de 
+            l'acquisition de connaissances. La quête de connaissance 
+            de l'homme l'a amené à faire des observations d'événements 
+        </p>
+        <p>
+            Pour comprendre la technologie, nous devons d'abord 
+            comprendre la nature humaine de la curiosité et de 
+            l'acquisition de connaissances. La quête de connaissance 
+            de l'homme l'a amené à faire des observations d'événements 
+        </p>
+        <p>
+            Pour comprendre la technologie, nous devons d'abord 
+            comprendre la nature humaine de la curiosité et de 
+            l'acquisition de connaissances. La quête de connaissance 
+            de l'homme l'a amené à faire des observations d'événements 
+        </p>
+    </main>
+{% endblock  %}
